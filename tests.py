@@ -6,18 +6,18 @@ import time
 
 # Example 1
 
-# class Hosttest(LiveServerTestCase):
-#
-# 		def testhomepage(self):
-#
-# 				options = webdriver.FirefoxOptions()
-# 				options.headless = True
-# 				driver = webdriver.Firefox(options=options)
-#
-# 				driver.get(self.live_server_url)
-# 				# try driver.get(self.live_server_url) if driver.get('http://127.0.0.1:8000/') does not work
-#
-# 				assert "Hello, world!" in driver.title
+class Hosttest(LiveServerTestCase):
+
+		def testhomepage(self):
+
+				options = webdriver.FirefoxOptions()
+				options.headless = True
+				driver = webdriver.Firefox(options=options)
+
+				driver.get(self.live_server_url)
+				# try driver.get(self.live_server_url) if driver.get('http://127.0.0.1:8000/') does not work
+
+				assert "Hello, world!" in driver.title
 
 # Example 2
 
